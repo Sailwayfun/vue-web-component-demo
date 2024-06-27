@@ -6,7 +6,7 @@ const props = defineProps({
   },
 });
 
-const emit = defineEmits(["togglemode"]);
+const emit = defineEmits(["modechange"]);
 </script>
 
 <template>
