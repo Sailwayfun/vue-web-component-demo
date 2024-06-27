@@ -1,15 +1,10 @@
 # vue-web-component
 
-This template should help get you started developing with Vue 3 in Vite.
+Use Vite and Vue3 to build reusable custom web components.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
+- Use `defineCustomElement` API from Vue to define a web component
+- Define custom props and events in a SFC
+- Build Vue project with `npm run build --watch`, `watch` for hot-reloading from the document that uses this web component
 ## Project Setup
 
 ```sh
