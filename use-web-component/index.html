@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Web Component</title>
+  </head>
+  <body>
+    <m-header mode="light"></m-header>
+    <script type="module">
+      import { register } from "../dist/index.js";
+      register();
+
+      const myHeader = document.querySelector("m-header");
+      console.log(myHeader);
+
+      myHeader.addEventListener("modechange", (e) => {
+        console.log(e.target);
+        if (myHeader.mode === "light") {
+          myHeader.mode = "dark";
+        } else {
+          myHeader.mode = "light";
+        }
+      });
+    </script>
+  </body>
+</html>
